@@ -15,11 +15,11 @@ const titleCased = () => {
   // List of special cases
   const specialCases = {
     'nan': 'NaN',
-    'jsonp?': 'JSONP',
+    'jsonp?': 'JSONP?',
     'oo': 'OO',
     'api': 'API',
     'stoppropagation': 'StopPropagation',
-    'preventdefault?': 'PreventDefault',
+    'preventdefault?': 'PreventDefault?',
     'constructor': 'Constructor'
   };
   
@@ -38,6 +38,7 @@ const titleCased = () => {
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
       })
       .join(' ');
+      
   });
 };
 
